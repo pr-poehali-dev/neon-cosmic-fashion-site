@@ -1,5 +1,7 @@
 
+
 import { useRandomContent } from '@/hooks/useRandomContent';
+
 
 interface VideoShowcaseProps {
   className?: string;

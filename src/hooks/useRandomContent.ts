@@ -1,6 +1,8 @@
 
+
 import { useState, useEffect } from 'react';
-import { modelImages, youtubeVideos, getRandomItems, ModelImage, YoutubeVideo } from '@/utils/data';
+import { modelImages, vkVideos, getRandomItems, ModelImage, VkVideo } from '@/utils/data';
+
 
 export const useRandomContent = () => {
   const [randomImages, setRandomImages] = useState<ModelImage[]>([]);

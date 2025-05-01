@@ -4,10 +4,13 @@ export interface ModelImage {
   alt: string;
 }
 
-export interface YoutubeVideo {
+
+export interface VkVideo {
   id: string;
+  ownerId: string;
   title: string;
 }
+
 
 export const modelImages: ModelImage[] = [
   { url: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e", alt: "Модель в студии" },
