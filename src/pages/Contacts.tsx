@@ -31,7 +31,7 @@ const Contacts = () => {
               <h2 className="text-2xl font-cyber font-bold mb-6 text-neon-blue text-glow">
                 Наши данные
               </h2>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-neon-blue/20 flex items-center justify-center text-neon-blue shrink-0">
@@ -56,20 +56,8 @@ const Contacts = () => {
                     </p>
                   </div>
                 </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-neon-purple/20 flex items-center justify-center text-neon-purple shrink-0">
-                    <Icon name="Clock" size={20} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-cyber text-white mb-1">Время работы</h3>
-                    <p className="text-white/70">
-                      Пн-Пт: 10:00 - 20:00<br />
-                      Сб-Вс: По договоренности
-                    </p>
-                  </div>
-                </div>
               </div>
+
               
               <div className="mt-10 pt-6 border-t border-white/10">
                 <h3 className="text-lg font-cyber text-white mb-3">Социальные сети</h3>

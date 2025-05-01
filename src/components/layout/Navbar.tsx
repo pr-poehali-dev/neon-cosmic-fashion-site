@@ -18,12 +18,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+
   const navLinks = [
     { name: "Главная", path: "/" },
-    { name: "Портфолио", path: "/portfolio" },
+    { name: "Модельные видео", path: "/portfolio" },
     { name: "Услуги", path: "/services" },
     { name: "Контакты", path: "/contacts" },
   ];
+
 
   return (
     <nav

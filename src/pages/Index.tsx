@@ -91,14 +91,15 @@ const Index = () => {
               </div>
             ))}
           </div>
-          
+
           <div className="mt-12 text-center">
             <Button className="bg-neon-blue hover:bg-neon-blue/80 text-white font-cyber shadow-neon-blue" asChild>
               <Link to="/services">
-                Все услуги и цены
+                Услуги
               </Link>
             </Button>
           </div>
+
         </div>
       </section>
       
