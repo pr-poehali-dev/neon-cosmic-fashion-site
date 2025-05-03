@@ -11,14 +11,14 @@ const VideoShowcase = ({ className = "" }: VideoShowcaseProps) => {
   return (
     <div className={`space-y-6 ${className}`}>
       {randomVideos.map((video, index) => (
-        <div key={index} className="neon-border p-1 rounded-lg bg-black/30">
+        <div key={index} className="border border-purple-500 p-1 rounded-lg bg-black/30">
           <div className="aspect-video rounded-lg overflow-hidden">
             <iframe
-              src={`https://vk.com/video_ext.php?oid=${video.ownerId}&id=${video.id}&hd=2&autoplay=0`}
+              src={`https://www.youtube.com/embed/${video.id}`}
+              title={video.title}
               width="100%"
               height="100%"
-              allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"
             ></iframe>

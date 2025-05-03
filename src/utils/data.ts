@@ -1,49 +1,79 @@
 
-export interface ModelImage {
+export interface Image {
   url: string;
-  alt: string;
+  title: string;
+  description: string;
 }
 
-
 export interface VkVideo {
-  id: string;
   ownerId: string;
+  id: string;
   title: string;
 }
 
+export interface YouTubeVideo {
+  id: string;
+  title: string;
+}
 
-export const modelImages: ModelImage[] = [
-  { url: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e", alt: "Модель в студии" },
-  { url: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f", alt: "Модель на фотосессии" },
-  { url: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1", alt: "Модель в элегантном образе" },
-  { url: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6", alt: "Модель в цветах" },
-  { url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb", alt: "Портрет модели" },
-  { url: "https://images.unsplash.com/photo-1581044777550-4cfa60707c03", alt: "Студийная фотосессия" },
-  { url: "https://images.unsplash.com/photo-1604681630705-5de61cfa895a", alt: "Модель в модном образе" },
-  { url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330", alt: "Портрет девушки" },
-  { url: "https://images.unsplash.com/photo-1508216404536-389532644ac5", alt: "Модель на подиуме" },
-  { url: "https://images.unsplash.com/photo-1464863979621-258859e62245", alt: "Фэшн-съемка" },
-  { url: "https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc", alt: "Профессиональная модель" },
-  { url: "https://images.unsplash.com/photo-1469334031218-e382a71b716b", alt: "Модель в платье" },
-  { url: "https://images.unsplash.com/photo-1550928431-ee0ec6db30d3", alt: "Высокая мода" },
-  { url: "https://images.unsplash.com/photo-1496747611176-843222e1e57c", alt: "Летняя фотосессия" },
-  { url: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df", alt: "Портрет улыбающейся модели" },
+export const images: Image[] = [
+  {
+    url: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80",
+    title: "Модельный тест",
+    description: "Профессиональная фотосессия для начинающих моделей",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    title: "Портфолио",
+    description: "Создание профессионального модельного портфолио",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    title: "Фэшн-съемка",
+    description: "Креативные концепции для продвинутых моделей",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    title: "Съемка для журнала",
+    description: "Создание материалов для глянцевых изданий",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    title: "Коммерческая съемка",
+    description: "Фотосессия для рекламы и каталогов",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80",
+    title: "Имиджевая съемка",
+    description: "Создание уникального образа для соцсетей",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1664575602276-acd073f104c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+    title: "Бьюти-съемка",
+    description: "Акцент на макияж и красоту модели",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80",
+    title: "Студийная съемка",
+    description: "Работа с профессиональным светом и оборудованием",
+  },
 ];
 
-export const youtubeVideos: YoutubeVideo[] = [
-  { id: "0qisGSwZym4", title: "Модельные тесты: как подготовиться" },
-  { id: "TUOgS7HC5Mo", title: "Секреты профессиональной съемки" },
-  { id: "DLr69eDfBBo", title: "Как стать моделью" },
-  { id: "9rR5JcI5daA", title: "Советы начинающим моделям" },
-  { id: "WLLFWH84PwE", title: "Модельное портфолио: что нужно знать" },
-  { id: "jPldXBxeYPY", title: "Техники позирования для моделей" },
-  { id: "P13dP6JFyKA", title: "Работа с камерой: советы профессионалов" },
-  { id: "O3UBOOZw-FE", title: "Индустрия моды: взгляд изнутри" },
-  { id: "hYH9mJtm8fA", title: "Как сделать идеальный модельный снимок" },
-  { id: "jdZ1ZYiJwOs", title: "Модельный образ: макияж и стиль" },
+export const youtubeVideos: YouTubeVideo[] = [
+  { id: "dQw4w9WgXcQ", title: "Как подготовиться к первой фотосессии" },
+  { id: "8hz7mmpYQAU", title: "Основы позирования для моделей" },
+  { id: "gCwjLPCqfmU", title: "Секреты удачного портфолио" },
+  { id: "jNQXAC9IVRw", title: "Тренды модельной индустрии" },
+  { id: "J---aiyznGQ", title: "Как выбрать фотографа для сотрудничества" },
+  { id: "QH2-TGUlwu4", title: "Лучшие техники для модельных поз" }
 ];
 
-export const getRandomItems = <T>(array: T[], count: number): T[] => {
-  const shuffled = [...array].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-};
+// Оставим старые данные на случай, если понадобятся позже
+export const vkVideos: VkVideo[] = [
+  { ownerId: "-67486235", id: "456240038", title: "Модельные тесты: как подготовиться" },
+  { ownerId: "-67486235", id: "456240042", title: "Секреты профессиональной съемки" },
+  { ownerId: "-67486235", id: "456240045", title: "Как стать моделью" },
+  { ownerId: "-67486235", id: "456240048", title: "Советы начинающим моделям" },
+  { ownerId: "-67486235", id: "456240051", title: "Модельное портфолио: что нужно знать" },
+  { ownerId: "-67486235", id: "456240055", title: "Техники позирования для моделей" }
+];
