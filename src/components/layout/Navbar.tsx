@@ -1,11 +1,11 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useMobile } from '@/hooks/use-mobile';
+import { useIsMobile } from '@/hooks/use-mobile';
 import Icon from '@/components/ui/icon';
 
 const Navbar = () => {
-  const isMobile = useMobile();
+  const isMobile = useIsMobile();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
